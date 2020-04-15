@@ -73,6 +73,7 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'icj.wsgi.application'
 
 
