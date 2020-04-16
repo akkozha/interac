@@ -11,3 +11,11 @@ def index(request):
 
 def video(request):
     return render(request, 'main/video.html', {})
+
+
+def games(request):
+    return render(request, 'main/games/index.html', {})
+
+
+def froggy(request):
+    return render(request, 'main/games/froggy.html', {})

@@ -459,8 +459,10 @@ h1, h2, h3, h4, h5,
 /* Navbar */
 .site-navbar {
   margin-bottom: 0px;
+    background: #B2B2B2;
+
   z-index: 1999;
-  position: absolute;
+  /*position: absolute;*/
   top: 0;
   width: 100%;
   padding: 1rem; }

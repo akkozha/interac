@@ -67,13 +67,11 @@
                 <span class="d-inline-block d-lg-none"><a href="#"
                                                           class="text-black site-menu-toggle js-menu-toggle py-5"><span
                         class="icon-menu h3 text-black"></span></a></span>
-
-
                 <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
                     <ul class="site-menu main-menu js-clone-nav mr-auto ">
                         <li class="{% if request.resolver_match.url_name == "index" %}active{% endif %}"><a href="{% url 'index' %}" class="nav-link">Басты бет</a></li>
                         <li class="{% if request.resolver_match.url_name == "video" %}active{% endif %}"><a href="{% url 'video' %}" class="nav-link">Видео</a></li>
-                        <li><a href="packages.html" class="nav-link">Ойындар</a></li>
+                        <li class="{% if request.resolver_match.url_name == "games" %}active{% endif %}"><a href="{% url 'games' %}" class="nav-link">Ойындар</a></li>
                         <li><a href="gallery.html" class="nav-link">Тест жүмыстары</a></li>
                         <li><a href="contact.html" class="nav-link">Контакт</a></li>
                     </ul>

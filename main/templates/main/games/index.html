@@ -1,0 +1,24 @@
+{% extends "main/base.html" %}
+{% load static %}
+{% block content %}
+    <div class="ftco-blocks-cover-1">
+        <div class="site-section-cover overlay">
+            <div class="container mt-4">
+                <h2 class="h2 text-white">Ойындар</h2>
+                <hr/>
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            {% load static %}
+                            <img class="card-img-top" src="{% static "images/froggy/frog-green.svg" %}" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Бақаға көмектесу</h5>
+                                <a href="/game/froggy/#kk" class="btn btn-primary">Ойнау</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
