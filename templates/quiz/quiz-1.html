@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <link href={% static 'css/quiz/app.4080f30b9223caf8a4cfd8934c445974.css' %} rel=stylesheet>
+    {#    <h2 class="h2 text-center py-4 text-black">Тест #1</h2>#}
+    {#    <hr/>#}
+    <div class="ftco-blocks-cover-1">
+        <div class="site-section-cover">
+            <div class="container mt-4">
+                <h2 class="h2 text-black">Тест #1</h2>
+                <hr/>
+                <div id=app></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      const quiz = {
+        user: "Толқын",
+        questions: [
+          {
+            text: "Ақпарат термині латын тілінің «informatio» сөзінен аударылғанда қандай ұғымды білдіреді?",
+            responses: [
+              {text: "есептеу, мәлімдеу"},
+              {text: "баяндау, түсіндіру, мәліметеу", correct: true},
+              {text: "орындау, өңдеу"},
+              {text: "сақтау"}
+            ]
+          },
+          {
+            text: "Ақпараттық процестер - бұл...",
+            responses: [
+              {text: "Ақпаратты жинау, түрлендіру, беру, қабылдау, сақтау, жеткізу", correct: true},
+              {text: "Ақпаратты беру және сақтау"},
+              {text: "Ақпаратты түрлендіру"},
+              {text: "Ақпаратты жеткізу"}
+            ]
+          },
+          {
+            text: "Адам қабылдайтын ақпарат түрлері:",
+            responses: [
+              {text: "жүйелік, қолданбалы"},
+              {text: "бейнелі және таңбалы", correct: true},
+              {text: "жасанды және табиғи"},
+              {text: "дыбысты, дыбыссыз "}
+            ]
+          },
+          {
+            text: "Алгоритм орындаушысы дегеніміз –",
+            responses: [
+              {text: "құрастырылған алгоритмді басқарушы субъект немесе нысан", correct: true},
+              {text: "мәтінді өзгертуге арналған программа пакеттері"},
+              {text: "құжаттарды құруға арналған программа пакеттері"},
+              {text: "процедуралар"}
+            ]
+          },
+          {
+            text: "Алгоритм –",
+            responses: [
+              {text: "программа пакеттері"},
+              {text: "базалық немесе жүйелік, қызметтік, қолданбалы түрінде орындау"},
+              {
+                text: "орындалатын іс - әрекеттің немесе есептің нәтижеге жету жолын реттелген тізбектер түрінде орындау",
+                correct: true
+              },
+              {text: "ЭЕМ - ге қажетті программалар"}
+            ]
+          },
+          {
+            text: "Файлдар неше типке бөлінеді?",
+            responses: [
+              {text: "4"},
+              {text: "3"},
+              {text: "2", correct: true},
+              {text: "5"}
+            ]
+          },
+          {
+            text: "Мәтіндік файл дегеніміз – ",
+            responses: [
+              {text: "мәтіндік жолдар тізбегі", correct: true},
+              {text: "мәтіндік әріптер тізбегі"},
+              {text: "мәтіндік сандар тізбегі"},
+              {text: "жарлықтар"}
+            ]
+          },
+          {
+            text: "Кең таралған архиватор? ",
+            responses: [
+              {text: "WinZip, WindowsArhivator, powerArchiver; WinRar, WinZip, power Archiver"},
+              {text: "WinRar, WinZip, power Archiver", correct: true},
+              {text: "WinRar "},
+              {text: ". powerArchiver, Windows Arhivator, WinRar."}
+            ]
+          },
+          {
+            text:
+                "Архивтік файлдың алғашқы файлдан айырмашылығы неде?",
+            responses: [
+              {
+                text: "редакциялау өте ыңғайлы"
+              },
+              {text: "вирустардан жеңіл қорғанады "},
+              {text: "дискіде аз орын алады", correct: true},
+              {text: "санкцияланбаған енуден жеңіл қорғанады"}
+            ]
+          },
+          {
+            text: "Мына әрекеттердің қайсысын архивтік файлда орындауға болады?",
+            responses: [
+              {text: "редакциялау "},
+              {text: "сығу", correct: true},
+              {text: "Орындауға жіберу"},
+              {text: "Қарап шығу"}
+            ]
+          }
+        ]
+      };
+      window.quiz = quiz;
+    </script>
+    <script type=text/javascript src={% static 'js/quiz/manifest.03eae04ea95c4c77d324.js' %}></script>
+    <script type=text/javascript src={% static 'js/quiz/vendor.4ba6443f5e817f59cd36.js' %}></script>
+    <script type=text/javascript src={% static 'js/quiz/app.8821189ebc73af9019c9.js' %}></script>
+{% endblock %}
