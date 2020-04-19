@@ -54,7 +54,9 @@
                     </div>
                     <div class="d-flex site-info align-items-center">
                         <span class="block-icon mr-3"><span class="icon-clock-o"></span></span>
-                        <span>SAgat almasy<br> Saturday CLOSEndcsjcjD</span>
+                        <div id="clock">
+                            <span class="hour">hh</span>:<span class="min">mm</span>:<span class="sec">ss</span>
+                        </div>
                     </div>
 
                 </div>
@@ -69,10 +71,14 @@
                         class="icon-menu h3 text-black"></span></a></span>
                 <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
                     <ul class="site-menu main-menu js-clone-nav mr-auto ">
-                        <li class="{% if request.resolver_match.url_name == "index" %}active{% endif %}"><a href="{% url 'index' %}" class="nav-link">Басты бет</a></li>
-                        <li class="{% if request.resolver_match.url_name == "video" %}active{% endif %}"><a href="{% url 'video' %}" class="nav-link">Видео</a></li>
-                        <li class="{% if request.resolver_match.url_name == "games" %}active{% endif %}"><a href="{% url 'games' %}" class="nav-link">Ойындар</a></li>
-                        <li class="{% if request.resolver_match.url_name == "quiz" %}active{% endif %}"><a href="{% url 'quiz' %}" class="nav-link">Тест жұмыстары</a></li>
+                        <li class="{% if request.resolver_match.url_name == "index" %}active{% endif %}"><a
+                                href="{% url 'index' %}" class="nav-link">Басты бет</a></li>
+                        <li class="{% if request.resolver_match.url_name == "video" %}active{% endif %}"><a
+                                href="{% url 'video' %}" class="nav-link">Видео</a></li>
+                        <li class="{% if request.resolver_match.url_name == "games" %}active{% endif %}"><a
+                                href="{% url 'games' %}" class="nav-link">Ойындар</a></li>
+                        <li class="{% if request.resolver_match.url_name == "quiz" %}active{% endif %}"><a
+                                href="{% url 'quiz' %}" class="nav-link">Тест жұмыстары</a></li>
                         <li><a href="contact.html" class="nav-link">Контакт</a></li>
                     </ul>
                 </nav>
@@ -87,7 +93,7 @@
 
 
     </header>
-    <div class="page-content" >
+    <div class="page-content">
         {% block content %}
         {% endblock %}
     </div>
@@ -108,6 +114,7 @@
 <script src="{% static "js/bootstrap-datepicker.min.js" %}"></script>
 <script src="{% static "js/aos.js" %}"></script>
 <script src="{% static "js/main.js" %}"></script>
+<script src="{% static "js/clock.js" %}"></script>
 
 </body>
 
