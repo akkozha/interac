@@ -54,7 +54,9 @@
 }
 
 .questionBox header .progressContainer > p {
-    margin: .5rem 0 0
+    margin: .5rem 0 0;
+    color: black !important;
+
 }
 
 .questionBox .titleContainer {
