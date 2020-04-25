@@ -79,7 +79,8 @@
                                 href="{% url 'games' %}" class="nav-link">Ойындар</a></li>
                         <li class="{% if request.resolver_match.url_name == "quiz" %}active{% endif %}"><a
                                 href="{% url 'quiz' %}" class="nav-link">Тест жұмыстары</a></li>
-                        <li><a href="contact.html" class="nav-link">Контакт</a></li>
+                        <li class="{% if request.resolver_match.url_name == "contact" %}active{% endif %}"><a
+                                        href="{% url 'contact' %}" class="nav-link">Контакт</a></li>
                     </ul>
                 </nav>
 

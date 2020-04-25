@@ -19,3 +19,7 @@ def games(request):
 
 def froggy(request):
     return render(request, 'main/games/froggy.html', {})
+
+
+def contact(request):
+    return render(request, 'main/contact.html', {})

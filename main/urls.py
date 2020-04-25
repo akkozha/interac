@@ -7,4 +7,5 @@ urlpatterns = [
     path('video/', views.video, name='video'),
     path('games/', views.games, name='games'),
     path('game/froggy/', views.froggy, name='froggy'),
+    path('contact/', views.contact, name='contact'),
 ]
