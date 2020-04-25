@@ -23,3 +23,11 @@ def froggy(request):
 
 def contact(request):
     return render(request, 'main/contact.html', {})
+
+
+def computer(request):
+    return render(request, 'main/games/computer.html', {})
+
+
+def computer_two(request):
+    return render(request, 'main/games/computer_two.html', {})
