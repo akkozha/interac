@@ -153,7 +153,7 @@ a:hover {
 }
 
 .next.gridgarden {
-  background-image: url('/images/froggy/next-gridgarden.png');
+  background-image: url('/static/images/froggy/next-gridgarden.png');
 }
 
 .next.gridgarden button {
@@ -165,7 +165,7 @@ a:hover {
 }
 
 .next.treehouse {
-  background-image: url('/images/froggy/next-treehouse.png');
+  background-image: url('/static/images/froggy/next-treehouse.png');
 }
 
 .next.treehouse button {
@@ -183,8 +183,8 @@ a:hover {
 #instructions,
 #instructions p,
 #instructions ul {
-	/* helps prevent the difficulty animation from jumping */
-	margin: 0;
+  /* helps prevent the difficulty animation from jumping */
+  margin: 0;
   padding-bottom: 1em;
 }
 
@@ -525,50 +525,50 @@ button:not(.disabled):hover {
 }
 
 .lilypad.green .bg {
-  background-image: url("/images/froggy/lilypad-green.svg");
+  background-image: url("/static/images/froggy/lilypad-green.svg");
 }
 
 .lilypad.green.cb-friendly .bg {
-  background-image: url("/images/froggy/lilypad-green-color-assist.svg");
+  background-image: url("/static/images/froggy/lilypad-green-color-assist.svg");
 }
 
 .lilypad.red .bg {
-  background-image: url("/images/froggy/lilypad-red.svg");
+  background-image: url("/static/images/froggy/lilypad-red.svg");
 }
 
 .lilypad.red.cb-friendly .bg {
-  background-image: url("/images/froggy/lilypad-red-color-assist.svg");
+  background-image: url("/static/images/froggy/lilypad-red-color-assist.svg");
 }
 
 .lilypad.yellow .bg {
-  background-image: url("/images/froggy/lilypad-yellow.svg");
+  background-image: url("/static/images/froggy/lilypad-yellow.svg");
 }
 .lilypad.yellow.cb-friendly .bg {
-  background-image: url("/images/froggy/lilypad-yellow-color-assist.svg");
+  background-image: url("/static/images/froggy/lilypad-yellow-color-assist.svg");
 }
 
 .frog.green .bg {
-  background-image: url("/images/froggy/images/frog-green.svg");
+  background-image: url("/static/images/froggy/frog-green.svg");
 }
 
 .frog.green.cb-friendly .bg {
-  background-image: url("/images/froggy/images/frog-green-color-assist.svg");
+  background-image: url("/static/images/froggy/frog-green-color-assist.svg");
 }
 
 .frog.red .bg {
-  background-image: url("/images/froggy/images/frog-red.svg");
+  background-image: url("/static/images/froggy/frog-red.svg");
 }
 
 .frog.red.cb-friendly .bg {
-  background-image: url("/images/froggy/images/frog-red-color-assist.svg");
+  background-image: url("/static/images/froggy/frog-red-color-assist.svg");
 }
 
 .frog.yellow .bg {
-  background-image: url("/images/froggy/images/frog-yellow.svg");
+  background-image: url("/static/images/froggy/frog-yellow.svg");
 }
 
 .frog.yellow.cb-friendly .bg {
-  background-image: url("/images/froggy/images/frog-yellow-color-assist.svg");
+  background-image: url("/static/images/froggy/frog-yellow-color-assist.svg");
 }
 
 .wrap {
