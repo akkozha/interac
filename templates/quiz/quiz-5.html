@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <link href={% static 'css/quiz/app.4080f30b9223caf8a4cfd8934c445974.css' %} rel=stylesheet>
+    {#    <h2 class="h2 text-center py-4 text-black">Тест #1</h2>#}
+    {#    <hr/>#}
+    <div class="ftco-blocks-cover-1">
+        <div class="site-section-cover">
+            <div class="container mt-4">
+                <h2 class="h2 text-black">Тест #5 (english)</h2>
+                <hr/>
+                <div id=app></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const quiz = {
+            user: "Толқын",
+            questions: [
+                {
+                    text: "science that studies information processes",
+                    responses: [
+                        { text: "computer Science", correct: true },
+                        { text: "Physics" },
+                        { text: "Math" },
+                        { text: "Geometry" }
+                    ]
+                },
+                {
+                    text: "basic tools for implementing information processes",
+                    responses: [
+                        { text: "Computer", correct: true },
+                        { text: "Printer" },
+                        { text: "Monitor" },
+                        { text: "Scanner" }
+                    ]
+                },
+                {
+                    text: "Latin 'information'.... concepts means.",
+                    responses: [
+                        { text: "computer science" },
+                        { text: "motherboard, system unit "},
+                        { text: "interpretation, presentation, information", correct: true},
+                        { text: "goal, task " }
+                    ]
+                },
+                {
+                    text: "how many of the most common theories for defining the concept of information are currently available?",
+                    responses: [
+                        { text: "3", correct: true },
+                        { text: "2" },
+                        { text: "6"},
+                        { text: "5" }
+                    ]
+                },
+                {
+                    text: "the grandfather of Cybernetics, Nobert Wiener, gave the following definition of information:",
+                    responses: [
+                        { text: "information is data that defines uncertainty about the world around us" },
+                        { text: "information, this is knowledge transmitted through a signal, a message. "},
+                        { text: "performing an action or task that is being performed as ordered sequences aimed at achieving a result"},
+                        { text: "information, this is a demonstration of the content obtained in the process of adapting to it, adapting the senses from the outside world.", correct: true }
+                    ]
+                },
+                {
+                    text: "what are the main ways to present information? ",
+                    responses: [
+                        { text: "symbolic, text, graphic" },
+                        { text: "technical, mathematical, video" },
+                        { text: "motherboard, system unit", correct: true },
+                        { text: "goal, task." }
+                    ]
+                },
+                {
+                    text: "give the definition of computer science?",
+                    responses: [
+                        { text: "Informatics is the use of human arrays of information in their activities" },
+                        { text: "Informatics is the science that studies the processes of information provision, transmission, processing and storage.", correct: true },
+                        { text: "computer science-goals, tasks" },
+                        { text: "computer science is the mathematical science that studies the processes of acquisition, transmission, processing, storage, reporting. " }
+                    ]
+                },
+                {
+                    text: "what is a counting system? ",
+                    responses: [
+                        { text: "rules for writing and naming numbers and reading"},
+                        { text: "set of rules and methods for writing numbers", correct: true },
+                        { text: "science that studies a set of rules and methods for writing numbers."},
+                        { text: "in the place where each number occupies" }
+                    ]
+                },
+                {
+                    text:
+                        "What is the difference between a positional reference system and a non-positional reference system?",
+                    responses: [
+                        {
+                            text: "write numbers "
+                        },
+                        { text: "in the place where each number occupies" },
+                        { text: "value of each digit in the place where it was received", correct: true },
+                        { text: "rules for writing and naming numbers and reading" }
+                    ]
+                },
+                {
+                    text: "what does the basis of the positional reference system mean?",
+                    responses: [
+                        { text: "name of the numbers used in it" },
+                        { text: "number of digits used in it", correct: true },
+                        { text: "the number system used in it" },
+                        { text: "the location of the digits used in it " }
+                    ]
+                }
+            ]
+        };
+        window.quiz = quiz;
+    </script>
+    <script type="text/javascript" src={% static 'js/quiz/manifest.03eae04ea95c4c77d324.js' %}></script>
+    <script type="text/javascript" src={% static 'js/quiz/vendor.4ba6443f5e817f59cd36.js' %}></script>
+    <script type="text/javascript" src={% static 'js/quiz/app.8821189ebc73af9019c9.js' %}></script>
+{% endblock %}

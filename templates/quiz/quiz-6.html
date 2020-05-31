@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <link href={% static 'css/quiz/app.4080f30b9223caf8a4cfd8934c445974.css' %} rel=stylesheet>
+    {#    <h2 class="h2 text-center py-4 text-black">Тест #1</h2>#}
+    {#    <hr/>#}
+    <div class="ftco-blocks-cover-1">
+        <div class="site-section-cover">
+            <div class="container mt-4">
+                <h2 class="h2 text-black">Тест #6 (english)</h2>
+                <hr/>
+                <div id=app></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      const quiz = {
+        user: "Толқын",
+          questions: [
+              {
+                  text: "how do I replace a number from binary to decimal?",
+                  responses: [
+                      {text: "the binary digital coefficient should be written as products of two powers with digits and find this sum. "},
+                      {text: "the binary digital coefficient should be written as the difference of products of two powers with numbers and find this sum. "},
+                      {
+                          text: "the binary digital coefficient should be written as a summation of products of two powers by digits and find this sum. ",
+                          correct: true
+                      },
+                      {text: "the binary digital coefficient should be written as a division of products of two powers by digits and find this sum. "}
+                  ]
+              },
+              {
+                  text: "what digits are used to write numbers in the brightness notation? ",
+                  responses: [
+                      {text: " 0,1,2,3,4,5,6,7,8,9, A,B,C,D,E,F ", correct: true},
+                      {text: " 0,1,2,3,4,5,6,7,9, A,B,C,D,E,F"},
+                      {text: " 0,2,3,4,5,6,7,8,9, A,B,C,D,E,F"},
+                      {text: "1,2,3,4,5,6,7,8,9, A,B,C,D,E,F"}
+                  ]
+              },
+              {
+                  text: "what rule do we use to convert whole decimal numbers to binary?",
+                  responses: [
+                      {text: "rules for distributing a number until it is distributed to the remainder of an integer "},
+                      {text: "rules for distributing numbers as long as 1 is divided "},
+                      {text: "rules for distributing numbers up to two smaller ones", correct: true}
+                  ]
+              },
+              {
+                  text: "what is an opinion? ",
+                  responses: [
+                      {text: "any vision that may be false or true", correct: true},
+                      {text: "any project that may be false or true "},
+                      {text: "some proverb that may be false or true "},
+                      {text: "any science that may be false or valid "}
+                  ]
+              },
+              {
+                  text: "what reviews are called General?",
+                  responses: [
+                      {text: "information is data that defines uncertainty about the world around us "},
+                      {text: "information, this is knowledge transmitted through a signal, a message. "},
+                      {text: "performing an action or task that is being performed as ordered sequences aimed at achieving a result"},
+                      {
+                          text: "information, this is to show the content received from the outside world in the process of adapting to it, adapting our senses.",
+                          correct: true
+                      }
+                  ]
+              },
+              {
+                  text: "what are the main ways to present information? ",
+                  responses: [
+                      {text: "comments describing properties of a group of objects or phenomena "},
+                      {text: "reviews that reflect properties of a group of objects or phenomena "},
+                      {text: "reviews describing properties of a group of objects or phenomena", correct: true},
+                      {text: "the purpose of the task."}
+                  ]
+              },
+              {
+                  text: "what is logical multiplication?",
+                  responses: [
+                      {text: "or using a prefix, combining two simple words into one component is called logical multiplication disjunction. "},
+                      {
+                          text: "and merging two simple statements into one component is called a conjunction of logical multiplication.",
+                          correct: true
+                      },
+                      {text: "and using the prefix, logical multiplication is called a conjunction. "}
+                  ]
+              },
+              {
+                  text: "what is Disjunction? ",
+                  responses: [
+                      {text: "and using the prefix, combining two simple words into one component is called disjunction of logical multiplication. "},
+                      {
+                          text: "or by joining, the logical joining of two simple words into one component is called disjunction.",
+                          correct: true
+                      },
+                      {text: "or using the prefix, logical multiplication is called izjunktion, so as not to combine two simple statements into one component. "}
+                  ]
+              },
+              {
+                  text: "what does logical negation mean?",
+                  responses: [
+                      {text: "adding a word that doesn't exist in a simple word A is called logical negation. "},
+                      {text: "adding another word to a simple word A is called logical negation. "},
+                      {text: "adding volume not to normal text is called logical negation. ", correct: true}
+                  ]
+              },
+              {
+                  text: "what does the basis of the positional reference system mean?",
+                  responses: [
+                      {text: "name of the numbers used in it "},
+                      {text: "number of digits used in it", correct: true},
+                      {text: "the number system used in it"},
+                      {text: "the location of the digits used in it "}
+                  ]
+              }
+          ]
+      };
+      window.quiz = quiz;
+    </script>
+    <script type=text/javascript src={% static 'js/quiz/manifest.03eae04ea95c4c77d324.js' %}></script>
+    <script type=text/javascript src={% static 'js/quiz/vendor.4ba6443f5e817f59cd36.js' %}></script>
+    <script type=text/javascript src={% static 'js/quiz/app.8821189ebc73af9019c9.js' %}></script>
+{% endblock %}

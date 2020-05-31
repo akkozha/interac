@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <link href={% static 'css/quiz/app.4080f30b9223caf8a4cfd8934c445974.css' %} rel=stylesheet>
+    {#    <h2 class="h2 text-center py-4 text-black">Тест #1</h2>#}
+    {#    <hr/>#}
+    <div class="ftco-blocks-cover-1">
+        <div class="site-section-cover">
+            <div class="container mt-4">
+                <h2 class="h2 text-black">Тест #4 (english)</h2>
+                <hr/>
+                <div id=app></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+      const quiz = {
+        user: "Толқын",
+          questions: [
+              {
+                  text: "what concept does it mean when the term 'information'?",
+                  responses: [
+                      {text: "calculation, statement"},
+                      {text: "report, explanation, message", correct: true},
+                      {text: "executing, editing"},
+                      {text: "save"}
+                  ]
+              },
+              {
+                  text: "information processes are...",
+                  responses: [
+                      {text: "collection, modification, transfer, acceptance, storage, delivery of information", correct: true},
+                      {text: "transmitting and storing information"},
+                      {text: "converting information"},
+                      {text: "information delivery"}
+                  ]
+              },
+              {
+                  text: "types of information that a person accepts:",
+                  responses: [
+                      {text: "system, applied"},
+                      {text: "figurative and symbolic", correct: true},
+                      {text: "artificial and natural"},
+                      {text: "sound, no sound "}
+                  ]
+              },
+              {
+                  text: "what does the algorithm performer mean–",
+                  responses: [
+                      {text: "subject or object of control of the developed algorithm", correct: true},
+                      {text: "software packages for changing text"},
+                      {text: "software packages for creating documents"},
+                      {text: "procedures"}
+                  ]
+              },
+              {
+                  text: "Algorithm –",
+                  responses: [
+                      {text: "software packages"},
+                      {text: "basic or system, functional, or application execution"},
+                      {
+                          text: "performing an action or task in the form of ordered result chains",
+                          correct: true
+                      },
+                      {text: "computer programs"}
+                  ]
+              },
+              {
+                  text: "how many types of files are shared?",
+                  responses: [
+                      {text: "4"},
+                      {text: "3"},
+                      {text: "2", correct: true},
+                      {text: "5"}
+                  ]
+              },
+              {
+                  text: "what does a text file mean–",
+                  responses: [
+                      {text: "sequence of text strings", correct: true},
+                      {text: "sequence of text letters"},
+                      {text: "text sequence of numbers"},
+                      {text: "edicts"}
+                  ]
+              },
+              {
+                  text: "widespread archiver? ",
+                  responses: [
+                      {text: "WinZip, WindowsArhivator, powerArchiver; WinRar, WinZip, power Archiver"},
+                      {text: "WinRar, WinZip, power Archiver", correct: true},
+                      {text: "WinRar "},
+                      {text: ". powerArchiver, Windows Arhivator, WinRar."}
+                  ]
+              },
+              {
+                  text:
+                      "What is the difference between an archive file and a primary file?",
+                  responses: [
+                      {
+                          text: "it is very convenient to edit"
+                      },
+                      {text :" easily protected from viruses "},
+                      {text: "takes up less disk space", correct: true},
+                      {text: "easily protected from unauthorized access"}
+                  ]
+              },
+              {
+                  text: "which of the following actions can be performed in the archive file?",
+                  responses: [
+                      {text: "editing "},
+                      {text: "compression", correct: true},
+                      {text: "submit for execution"},
+                      {text: "view"}
+                  ]
+              }
+          ]
+      };
+      window.quiz = quiz;
+    </script>
+    <script type=text/javascript src={% static 'js/quiz/manifest.03eae04ea95c4c77d324.js' %}></script>
+    <script type=text/javascript src={% static 'js/quiz/vendor.4ba6443f5e817f59cd36.js' %}></script>
+    <script type=text/javascript src={% static 'js/quiz/app.8821189ebc73af9019c9.js' %}></script>
+{% endblock %}
