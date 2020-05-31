@@ -31,3 +31,7 @@ def computer(request):
 
 def computer_two(request):
     return render(request, 'main/games/computer_two.html', {})
+
+
+def learn_html(request):
+    return render(request, 'main/games/learn_html.html', {})
